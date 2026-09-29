@@ -9,9 +9,9 @@ type GetVersionCommand() =
   inherit Cmdlet()
 
   /// The assembly version.
-  static let mutable Version: SemanticVersion =
-    let version = typeof<GetVersionCommand>.Assembly.GetName().Version |> nonNull
-    SemanticVersion version
+  static let mutable version: SemanticVersion =
+    let value = typeof<GetVersionCommand>.Assembly.GetName().Version
+    SemanticVersion value
 
   /// Performs execution of this command.
-  override this.ProcessRecord() = this.WriteObject Version
+  override this.ProcessRecord() = this.WriteObject version
