@@ -21,7 +21,7 @@
 			LicenseUri = "https://github.com/CedX/FSharp.ps1/blob/main/License.md"
 			ProjectUri = "https://github.com/CedX/FSharp.ps1"
 			ReleaseNotes = "https://github.com/CedX/FSharp.ps1/releases"
-			Tags = "assembly", "dotnet", "fsharp", "module", "powershell"
+			Tags = "assembly", "dotnet", "f#", "fsharp", "module", "powershell"
 		}
 	}
 }
