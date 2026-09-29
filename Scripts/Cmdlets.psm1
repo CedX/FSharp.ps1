@@ -63,8 +63,7 @@ function Publish-PSGalleryModule {
 	New-Item $output/Binaries -ItemType Directory | Out-Null
 	Copy-Item $root/FSharp.psd1 $output/Belin.FSharp.psd1
 	Copy-Item $root/*.md $output
-	Copy-Item $root/Sources $output -Recurse
-	Remove-Item $output/Sources/*.cs*, $output/Sources/obj -Recurse
+	$module.RootModule | Copy-Item -Destination $output/Binaries
 	$module.RequiredAssemblies | ForEach-Object { "$root/$_" } | Copy-Item -Destination $output/Binaries
 
 	$output = "$root/Temp/PSGallery"
