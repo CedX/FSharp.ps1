@@ -21,8 +21,13 @@ Install-PSResource Belin.FSharp -Repository PSGallery
 ```
 
 ### 2. Import it
-Now in your [PowerShell](https://learn.microsoft.com/en-us/powershell) code, you can use:
+Add the `Belin.FSharp` module as a dependency
+in your [module manifest](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_module_manifests):
 
 ```powershell
-using module Belin.FSharp
+@{
+  RequiredModules = @(
+    "Belin.FSharp"
+  )
+}
 ```
