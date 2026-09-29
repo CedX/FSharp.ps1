@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<Company>Cedric-Belin.fr</Company>
+		<Copyright>© Cédric Belin</Copyright>
+		<Description>FSharp.Core redistributables from F#, for PowerShell modules.</Description>
+		<Product>FSharp.Core for PowerShell</Product>
+		<Version>1.0.0</Version>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<AssemblyName>Belin.FSharp</AssemblyName>
+		<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+		<HotReloadAutoRestart>true</HotReloadAutoRestart>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<OutDir>../Binaries</OutDir>
+		<RootNamespace>Belin.FSharp</RootNamespace>
+		<SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+		<TargetFramework>net10.0</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<InternalsVisibleTo Include="$(AssemblyName).Tests" />
+		<PackageReference Update="FSharp.Core" Version="10.1.401" />
+		<PackageReference Include="System.Management.Automation" Version="7.6.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Include="Get-Version.fs" />
+	</ItemGroup>
+</Project>
