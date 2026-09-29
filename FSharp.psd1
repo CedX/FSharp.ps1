@@ -1,6 +1,6 @@
 @{
 	DefaultCommandPrefix = "FSharp"
-	ModuleVersion = "1.0.0"
+	ModuleVersion = "10.1.401"
 	PowerShellVersion = "7.6"
 	RootModule = "Binaries/Belin.FSharp.dll"
 
