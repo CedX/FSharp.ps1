@@ -3,8 +3,7 @@ namespace Belin.FSharp
 open System.Management.Automation
 
 /// Returns the version number of the `FSharp.Core` assembly.
-[<Cmdlet(VerbsCommon.Get, "Version")>]
-[<OutputType(typeof<SemanticVersion>)>]
+[<Cmdlet(VerbsCommon.Get, "Version"); OutputType(typeof<string>); OutputType(typeof<SemanticVersion>)>]
 type GetVersionCommand() =
   inherit Cmdlet()
 
