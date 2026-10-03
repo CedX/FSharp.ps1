@@ -11,5 +11,10 @@ type GetVersionCommand() =
   /// The assembly version.
   static let version = SemanticVersion (typeof<GetVersionCommand>.Assembly.GetName().Version)
 
+  /// Value indicating whether to return a `[semver]` object.
+  [<Parameter>]
+  member val PassThru = SwitchParameter false with get, set
+
   /// Performs execution of this command.
-  override this.ProcessRecord () = this.WriteObject version
+  override this.ProcessRecord () =
+    this.WriteObject (if this.PassThru.IsPresent then version :> obj else $"FSharp.Core {version}")
