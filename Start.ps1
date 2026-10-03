@@ -16,7 +16,7 @@ param (
 	[string] $Command,
 
 	# The parameters of the cmdlet to run.
-	[Parameter(Position = 3, ValueFromRemainingArguments)]
+	[Parameter(Position = 2, ValueFromRemainingArguments)]
 	[string[]] $Parameters = @()
 )
 
