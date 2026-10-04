@@ -17,7 +17,8 @@ This module is meant to be used as a dependency by other PowerShell modules writ
 It loads the `FSharp.Core` assembly into the PowerShell session, so that your own module does not have to ship it.
 
 Binary modules bundling their own copy of `FSharp.Core.dll` cannot be loaded side by side
-if they reference different versions of this assembly: the first imported module wins, and the others fail to load.  
+if they reference different versions of this assembly: the first imported module wins, and the others fail to load.
+
 By depending on this module, all F#-based modules share a single copy of `FSharp.Core` assembly.
 
 ### Declaring the dependency
