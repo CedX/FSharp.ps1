@@ -5,11 +5,11 @@ open System.Management.Automation
 /// Returns the version number of the `FSharp.Core` assembly.
 [<Cmdlet(VerbsCommon.Get, "Version", DefaultParameterSetName = "Default")>]
 [<OutputType(typeof<string>, ParameterSetName = [| "Default" |]); OutputType(typeof<SemanticVersion>, ParameterSetName = [| "PassThru" |])>]
-type GetVersionCommand() =
+type GetVersion() =
   inherit PSCmdlet()
 
   /// The assembly version.
-  static let version = SemanticVersion (typeof<GetVersionCommand>.Assembly.GetName().Version)
+  static let version = SemanticVersion (typeof<GetVersion>.Assembly.GetName().Version)
 
   /// Value indicating whether to return a `[semver]` object.
   [<Parameter(ParameterSetName = "PassThru")>]
