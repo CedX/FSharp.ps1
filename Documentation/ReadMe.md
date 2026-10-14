@@ -27,7 +27,7 @@ Add a dependency to the [manifest](https://learn.microsoft.com/en-us/powershell/
 ```powershell
 @{
   RequiredModules = @(
-    @{ ModuleName = "Belin.FSharp"; ModuleVersion = "10.1.401" }
+    @{ ModuleName = "Belin.FSharp"; ModuleVersion = "10.1.402" }
   )
 }
 ```
