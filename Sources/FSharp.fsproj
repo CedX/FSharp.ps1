@@ -4,7 +4,7 @@
 		<Copyright>© Cédric Belin</Copyright>
 		<Description>FSharp.Core redistributables from F#, for PowerShell modules.</Description>
 		<Product>FSharp.Core for PowerShell</Product>
-		<Version>10.1.401</Version>
+		<Version>10.1.402</Version>
 	</PropertyGroup>
 
 	<PropertyGroup>
