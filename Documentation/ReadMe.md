@@ -27,7 +27,7 @@ Add a dependency to the [manifest](https://learn.microsoft.com/en-us/powershell/
 ```powershell
 @{
   RequiredModules = @(
-    @{ ModuleName = "Belin.FSharp"; ModuleVersion = "10.1.402" }
+    @{ ModuleName = "Belin.FSharp"; ModuleVersion = "10.1.403" }
   )
 }
 ```
@@ -41,5 +41,5 @@ of the provided `FSharp.Core` assembly as a [SemanticVersion](https://learn.micr
 ```powershell
 Import-Module Belin.FSharp
 Get-FSharpVersion
-# 10.1.401
+# 10.1.403
 ```
