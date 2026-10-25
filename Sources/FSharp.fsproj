@@ -4,7 +4,7 @@
 		<Copyright>© Cédric Belin</Copyright>
 		<Description>FSharp.Core redistributables from F#, for PowerShell modules.</Description>
 		<Product>FSharp.Core for PowerShell</Product>
-		<Version>10.1.402</Version>
+		<Version>10.1.403</Version>
 	</PropertyGroup>
 
 	<PropertyGroup>
@@ -23,7 +23,7 @@
 
 	<ItemGroup>
 		<InternalsVisibleTo Include="$(AssemblyName).Tests" />
-		<PackageReference Update="FSharp.Core" Version="10.1.402" />
+		<PackageReference Update="FSharp.Core" Version="10.1.403" />
 		<PackageReference Include="System.Management.Automation" Version="7.6.8" />
 	</ItemGroup>
 
