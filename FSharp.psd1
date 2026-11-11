@@ -1,7 +1,7 @@
 @{
 	DefaultCommandPrefix = "FSharp"
-	ModuleVersion = "10.1.403"
-	PowerShellVersion = "7.6"
+	ModuleVersion = "11.0.101"
+	PowerShellVersion = "7.7"
 	RootModule = "Binaries/Belin.FSharp.dll"
 
 	Author = "Cédric Belin <cedx@outlook.com>"
